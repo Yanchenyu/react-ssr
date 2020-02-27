@@ -9928,31 +9928,38 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 30
         },
         __self: this
       }, "Index ", this.props.type, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         onClick: this.handleClick,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 32
         },
         __self: this
       }, "click me with location"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/home",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 33
         },
         __self: this
       }, "click me with Link"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         onClick: this.handleRouter,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 34
         },
         __self: this
-      }, "click me with router"));
+      }, "click me with router"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "/home",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, "click a "));
     }
   }], [{
     key: "getInitialProps",
@@ -9968,20 +9975,23 @@ function (_React$Component) {
                 req = _ref.req;
 
                 if (!isServer) {
-                  _context.next = 5;
+                  _context.next = 6;
                   break;
                 }
 
+                console.log('in server');
                 return _context.abrupt("return", {
                   type: 'server render'
                 });
 
-              case 5:
+              case 6:
+                console.log('in client');
+                debugger;
                 return _context.abrupt("return", {
                   type: 'client render'
                 });
 
-              case 6:
+              case 9:
               case "end":
                 return _context.stop();
             }
